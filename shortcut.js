@@ -9,10 +9,19 @@ const hideUser = () => console.log("Hide User");
 
 // isActive || hideUser();
 
-// // // // Browser Storate
-const handleAddToStorate = () => {
-  const name = document.querySelector("#name").value;
-  localStorage.setItem("name", name);
+// // // // Browser Storage
+// const handleAddToStorage = () => {
+//   const name = document.querySelector("#name").value;
+//   localStorage.setItem("name", name);
+// };
+
+// Bracket Notation
+const person = {
+  name: "Hero Alom",
+  age: 10,
+  friends: ["Korim", "Rohim", "Abul"],
+  salary: 10000,
 };
 
-// 11.58
+const heroName = person["name"];
+console.log(heroName);
